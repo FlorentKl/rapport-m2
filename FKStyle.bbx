@@ -183,11 +183,11 @@
 \renewbibmacro*{issue+date}{%
   \printtext{%
     \iffieldundef{issue}
-      {\usebibmacro{date}}
+      {\printtext[parens]{\usebibmacro{date}}}
       {%
         \printfield{issue}%
         \setunit*{\addspace}%
-        \usebibmacro{date}%
+        \printtext[parens]{\usebibmacro{date}}%
       }%
   }%
   \newunit
@@ -461,8 +461,7 @@
   \newunit
   \usebibmacro{pages}%
   \newunit
-  \printtext[parens]{\usebibmacro{date}}%
-  %\usebibmacro{issue+date}%
+  \usebibmacro{issue+date}%
   \newunit
   \printfield{note}%
   %\newunit\newblock
