@@ -1,0 +1,180 @@
+\ifglsentryexists{musk}{}%
+{%
+\gls@defglossaryentry{musk}%
+{%
+name={MuSK},%
+sort={MuSK},%
+type={main},%
+first={Muscle-Specific Kinase\glsspace (MuSK)},%
+firstplural={Muscle-Specific Kinases\glsspace (MuSKs)},%
+text={MuSK},%
+plural={MuSKs},%
+description={Muscle-Specific Kinase},%
+descriptionplural={Muscle-Specific Kinase\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Muscle-Specific Kinase},%
+longplural={Muscle-Specific Kinases},%
+short={MuSK},%
+shortplural={MuSKs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{adn}{}%
+{%
+\gls@defglossaryentry{adn}%
+{%
+name={ADN},%
+sort={ADN},%
+type={main},%
+first={Acide Desoxyribonucléique\glsspace (ADN)},%
+firstplural={Acide Desoxyribonucléiques\glsspace (ADNs)},%
+text={ADN},%
+plural={ADNs},%
+description={Acide Desoxyribonucléique},%
+descriptionplural={Acide Desoxyribonucléique\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Acide Desoxyribonucléique},%
+longplural={Acide Desoxyribonucléiques},%
+short={ADN},%
+shortplural={ADNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{arn}{}%
+{%
+\gls@defglossaryentry{arn}%
+{%
+name={ARN},%
+sort={ARN},%
+type={main},%
+first={Acide Ribonucléique\glsspace (ARN)},%
+firstplural={Acide Ribonucléiques\glsspace (ARNs)},%
+text={ARN},%
+plural={ARNs},%
+description={Acide Ribonucléique},%
+descriptionplural={Acide Ribonucléique\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Acide Ribonucléique},%
+longplural={Acide Ribonucléiques},%
+short={ARN},%
+shortplural={ARNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wt}{}%
+{%
+\gls@defglossaryentry{wt}%
+{%
+name={WT},%
+sort={WT},%
+type={main},%
+first={Wild Type\glsspace (WT)},%
+firstplural={Wild Types\glsspace (WTs)},%
+text={WT},%
+plural={WTs},%
+description={Wild Type},%
+descriptionplural={Wild Type\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Wild Type},%
+longplural={Wild Types},%
+short={WT},%
+shortplural={WTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{jnm}{}%
+{%
+\gls@defglossaryentry{jnm}%
+{%
+name={JNM},%
+sort={JNM},%
+type={main},%
+first={Jonction Neuro-Musculaire\glsspace (JNM)},%
+firstplural={Jonction Neuro-Musculaires\glsspace (JNMs)},%
+text={JNM},%
+plural={JNMs},%
+description={Jonction Neuro-Musculaire},%
+descriptionplural={Jonction Neuro-Musculaire\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Jonction Neuro-Musculaire},%
+longplural={Jonction Neuro-Musculaires},%
+short={JNM},%
+shortplural={JNMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pfa}{}%
+{%
+\gls@defglossaryentry{pfa}%
+{%
+name={PFA},%
+sort={PFA},%
+type={main},%
+first={Paraformaldéhyde\glsspace (PFA)},%
+firstplural={Paraformaldéhydes\glsspace (PFAs)},%
+text={PFA},%
+plural={PFAs},%
+description={Paraformaldéhyde},%
+descriptionplural={Paraformaldéhyde\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Paraformaldéhyde},%
+longplural={Paraformaldéhydes},%
+short={PFA},%
+shortplural={PFAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
