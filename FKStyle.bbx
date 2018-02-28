@@ -27,7 +27,6 @@
   minnames = 3,
   sorting  = none
 }
-%\uspunctuation
 
 % Custom field formats 
 \DeclareFieldFormat[article]{number}{\addnbspace#1}
@@ -42,14 +41,14 @@
 \DeclareFieldFormat[report]{title}{\mkbibquote{#1\isdot}}
 \DeclareFieldFormat{url}{\bibstring{url}\addcolon\space\url{#1}}
 \DeclareFieldFormat*{volume}
-  {\addnbspace\bf#1}
+  {\addnbspace\textbf#1}
 \DeclareFieldFormat[article,periodical]{volume}
-  {\addnbspace\bf#1}
+  {\addnbspace\textbf#1}
 
 % Simple modifications to punctuation, etc.
 \renewcommand*\bibnamedash{\textemdash\textemdash}
 \renewcommand*\intitlepunct{\addspace}
-\renewcommand*\newunitpunct{\addcomma\addspace}
+\renewcommand*\newunitpunct{\addperiod\addspace}
 
 % Bibliography strings
 \NewBibliographyString{patentjp}
@@ -88,7 +87,7 @@
   }
     {%
       \iffieldequals{fullhash}{\bbx@lasthash}
-        {\bibnamedash\addcomma\space}
+        {\bibnamedash\addcomma\space\textbf}
         {\printnames{author}}%
       \usebibmacro{bbx:savehash}%  
       \iffieldundef{authortype}

@@ -5,19 +5,19 @@
 
 %%% Aspect Documents
 \usepackage{geometry}
-\geometry{	a4paper,
-							top=2.5cm,
-							bottom=2.5cm,
-							left=2.5cm,
-							right=2.5cm}
+\geometry{a4paper,
+			top=2.5cm,
+			bottom=2.5cm,
+			left=2.5cm,
+			right=2.5cm}
 
 %%% Police / Présentation
 \usepackage{fontspec} %Police
 \setmainfont[Ligatures=TeX,
-								Kerning=Uppercase, %Meilleurs intégration Maj-Min
-								BoldFont={AGaramondPro-Semibold},
-								ItalicFont={AGaramondPro-Italic},
-								Numbers=Proportional,]{Adobe Garamond Pro}
+			Kerning=Uppercase, %Meilleurs intégration Maj-Min
+			BoldFont={AGaramondPro-Bold},
+			ItalicFont={AGaramondPro-Italic},
+			Numbers=Proportional,]{Adobe Garamond Pro}
 \usepackage{microtype}
 \usepackage{unicode-math} %Plante si absent mais formule dans texte
 \setmathrm{Adobe Garamond Pro}
@@ -46,13 +46,13 @@
 %%% Pdf / Références internes
 \usepackage{hyperref} %Meilleure gestion pdf
 \hypersetup{pdfauthor={Florent KLEE},
-							pdftitle={Roles de Wnts et MuSK, un récepteur tyrosine kinase dans le cerveau},
-							pdfsubject={Roles de Wnts et MuSK dans le cerveau},
-							colorlinks,
-							citecolor=black,
-							filecolor=black,
-							linkcolor=black,
-							urlcolor=blue,}
+			pdftitle={Roles de Wnts et MuSK, un récepteur tyrosine kinase dans le cerveau},
+			pdfsubject={Roles de Wnts et MuSK dans le cerveau},
+			colorlinks,
+			citecolor=black,
+			filecolor=black,
+			linkcolor=black,
+			urlcolor=blue,}
 \usepackage{fancyref} %Après Hyperef
 \usepackage{cleveref} %Ref mieux gérer
 
@@ -63,19 +63,19 @@
 
 %%% Glossaire
 \usepackage[toc, %Apparaît dans table des matières
-							nopostdot, %Pas de points a fin acronyms
-							nonumberlist,%Pas de numéro de pages
-							nogroupskip, %Pas de regroupement par première lettre
-							]{glossaries} 
+			nopostdot, %Pas de points a fin acronyms
+			nonumberlist,%Pas de numéro de pages
+			nogroupskip, %Pas de regroupement par première lettre
+			]{glossaries} 
 							
 %%% Biblio
 \usepackage[sorting=none,
-							backend=biber,
-							style=FKStyle,
-							block=none,
-							date=year,
-							minbibnames=3, maxbibnames=9,
-							]{biblatex} %A voir + tard
+			backend=biber,
+			style=FKStyle,
+			block=none,
+			date=year,
+			minbibnames=3, maxbibnames=9,
+			]{biblatex} %A voir + tard
 \addbibresource{library.bib}
 \defbibheading{subbibliography}[\refname]{\section*{#1}}
 \usepackage[nottoc]{tocbibind} %Bibliographie dans Table des matières
