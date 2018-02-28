@@ -23,28 +23,28 @@
 % Alter settings that carry through from biblatex
 \ExecuteBibliographyOptions{
   giveninits,
-  maxnames = 999,
+  maxnames = 6,
   minnames = 3,
   sorting  = none
 }
-\uspunctuation
+%\uspunctuation
 
 % Custom field formats 
-\DeclareFieldFormat[article]{number}{\bibstring{number}\addnbspace#1}
+\DeclareFieldFormat[article]{number}{\addnbspace#1}
 \DeclareFieldFormat[patent]{number}{\mkonepagegrouped{#1}}
-\DeclareFieldFormat{pages}{%
-  \mkpageprefix[bookpagination][\mkpagegrouped]{#1}%
-}
+\DeclareFieldFormat{pagination}{none}
+\DeclareFieldFormat{pages}{#1}
 \DeclareFieldFormat{sentencecase}{\bbx@colon@search{\MakeSentenceCase*}{#1}}
 \DeclareFieldFormat[book,inbook,incollection,inproceedings]{series}
   {\bibstring{jourser}\addnbspace#1}
+\DeclareFieldFormat[article]{title}{#1}
 \DeclareFieldFormat[online]{title}{#1\isdot}
 \DeclareFieldFormat[report]{title}{\mkbibquote{#1\isdot}}
 \DeclareFieldFormat{url}{\bibstring{url}\addcolon\space\url{#1}}
 \DeclareFieldFormat*{volume}
-  {\bibstring{volume}\addnbspace#1}
+  {\addnbspace\bf#1}
 \DeclareFieldFormat[article,periodical]{volume}
-  {\bibstring{jourvol}\addnbspace#1}
+  {\addnbspace\bf#1}
 
 % Simple modifications to punctuation, etc.
 \renewcommand*\bibnamedash{\textemdash\textemdash}
@@ -311,12 +311,12 @@
     }%
   \printfield{titleaddon}%
 }
-  
-\renewbibmacro*{volume+number+eid}{%
+
+\renewbibmacro*{volume+number+eid}{% Number pas utile dans mon style
   \printfield{volume}%
   \newunit
-  \printfield{number}%
-  \newunit
+  %\printfield{number}%
+  %\newunit
   \printfield{eid}%
 }
 
@@ -445,6 +445,8 @@
   \usebibmacro{begentry}%
   \usebibmacro{author/translator+others}%
   \newunit
+  \usebibmacro{issue+date}%
+  \newunit
   \usebibmacro{title}%
   %\newunit
   %\printlist{language}%
@@ -460,8 +462,6 @@
   %\usebibmacro{byeditor+others}%
   \newunit
   \usebibmacro{pages}%
-  \newunit
-  \usebibmacro{issue+date}%
   \newunit
   \printfield{note}%
   %\newunit\newblock
