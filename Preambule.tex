@@ -43,19 +43,6 @@
 	\renewcommand{\footrulewidth}{0pt}}
 \setlength{\headsep}{25pt}
 
-%%% Pdf / Références internes
-\usepackage{hyperref} %Meilleure gestion pdf
-\hypersetup{pdfauthor={Florent KLEE},
-			pdftitle={Roles de Wnts et MuSK, un récepteur tyrosine kinase dans le cerveau},
-			pdfsubject={Roles de Wnts et MuSK dans le cerveau},
-			colorlinks,
-			citecolor=black,
-			filecolor=black,
-			linkcolor=black,
-			urlcolor=blue,}
-\usepackage{fancyref} %Après Hyperef
-\usepackage{cleveref} %Ref mieux gérer
-
 %%% Images
 \usepackage{graphicx} %Gestion des images
 \usepackage{wrapfig} %Gestion des images, permet mise image et texte cote a cote
@@ -82,6 +69,22 @@
 
 %%% Divers
 \usepackage{todonotes}
+
+%%% Pdf / Références internes
+\usepackage{hyperref} %Meilleure gestion pdf, load presque dernier
+\hypersetup{pdfauthor={Florent KLEE},
+	pdftitle={Roles de Wnts et MuSK, un récepteur tyrosine kinase dans le cerveau},
+	pdfsubject={Roles de Wnts et MuSK dans le cerveau},
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=blue,}
+\usepackage{fancyref} %Après Hyperef
+\usepackage{cleveref} %Ref mieux gérer
+
+%%% Création Index
+\makeindex
 
 %Redef format chapitre, notamment reduire espace au dessus et dessous de ceux ci
 \makeatletter

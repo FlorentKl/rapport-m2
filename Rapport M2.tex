@@ -17,7 +17,6 @@
 \fancyhf{}
 \chead{\textit{\titredoc}}
 
-
 %%%%% Page de Garde %%%%%	
 \input{./Titre.tex}\thispagestyle{empty}
 \blankpage
@@ -27,22 +26,27 @@
 \newpage
 
 %%%%% Table des Matières %%%%%
-\setcounter{page}{1}
-\cfoot{\textbf{\thepage}}
-\tableofcontents
+\tableofcontents\thispagestyle{fancy}
 \newpage
+\clearpage
+
+%%%%% Inclusion Glossaire %%%%%
+\pagenumbering{Roman}
+\printglossary[	title=Abbréviations, 
+toctitle=Abbréviations, 
+type=\acronymtype]
+\clearpage
 
 %%%%% Corps Documents %%%%%
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\cfoot{\textbf{\thepage}}
+
 \input{./Introduction.tex}
 \input{./MatEtMeth.tex}
 \input{./Resultats.tex}
 \input{./Discussion.tex}
 \input{./Conclusion.tex}
-
-%%%%% Inclusion Glossaire %%%%%
-\printglossary[	title=Abbréviations, 
-				toctitle=Abbréviations, 
-				type=\acronymtype]
 
 %%%%% Inclusion Bibliographie %%%%%
 \printbibliography[heading=bibintoc, title=Références]
