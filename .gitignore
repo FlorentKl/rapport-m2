@@ -219,5 +219,8 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+<<<<<<< HEAD
 Rapport M2.pdf
+=======
+>>>>>>> develop
 ~$Recap Souris.xlsx
