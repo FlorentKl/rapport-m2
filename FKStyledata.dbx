@@ -1,0 +1,6 @@
+\ProvidesFile{FKStyle.dbx}[2018/03/09]
+
+\DeclareDatamodelFields[type=field,datatype=verbatim]{pmid}
+\DeclareDatamodelEntryfields{pmid}
+\DeclareDatamodelFields[type=field,datatype=verbatim]{pmcid}
+\DeclareDatamodelEntryfields{pmcid}
