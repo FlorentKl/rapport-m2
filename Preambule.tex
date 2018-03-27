@@ -24,6 +24,7 @@
 %\usepackage[adobe-garamond]{mathdesign} %Police signe maths %%Fait buguer avec unicode-math
 \usepackage[version=4]{mhchem} %Ecriture ion/molécules
 \usepackage{textgreek}
+\usepackage{multicol}
 
 %%% Présentation
 \usepackage{csquotes}
@@ -68,10 +69,16 @@
 \usepackage[toc, %Apparaît dans table des matières
 			nopostdot, %Pas de points a fin acronyms
 			nonumberlist,%Pas de numéro de pages
-			nogroupskip, %Pas de regroupement par première lettre
-			]{glossaries} 
+			%nogroupskip, %Pas de regroupement par première lettre
+			acronym,
+			]{glossaries}
 \usepackage{glossary-mcols}
-							
+\newglossarystyle{twocollist}{\glossarystyle{index}\BeforeBeginEnvironment{theglossary}
+									{\begin{multicols*}{2}}\AfterEndEnvironment{theglossary}{\end{multicols*}}}
+									%multicols* permet de remplir une colonne après l'autre. multicol va faire en sorte de remplir les 2
+									 %colonnes du même volume	
+%\glssetcategoryattribute{acronym}{glossname}{\makefirstuc}
+
 %%% Biblio
 \usepackage[sorting=none,
 			backend=biber,
@@ -91,11 +98,13 @@
 %%% Création Index
 \makeindex
 
-%Redef format chapitre, notamment reduire espace au dessus et dessous de ceux ci
+%Redef format section (chapite, chapitre* et paragraph), notamment reduire espace au dessus et dessous de ceux ci
+%Depend du package Titlesec
+%\titleformat{command}[shape]{format}{abel}{sep}{before-code}[after-code]
 \makeatletter
-\titleformat{\chapter}[hang]
-{\normalfont\huge\bfseries}{\chaptertitlename~\thechapter : }{17\p@}{\huge}
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\chaptertitlename~\thechapter : }{17\p@}{\huge}
 \titlespacing*{\chapter}{0pt}{10\p@}{13\p@}
+\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{}{0\p@}{}[.]
 \makeatother
 
 %%%%% COMMANDES / MACRO %%%%%
@@ -103,5 +112,7 @@
 \newcommand{\up}[1]{\textsuperscript{#1}} %Permet exposants
 \newcommand{\mcrd}{MuSK\textDelta{}CRD\xspace} %Ecrire MuSK-CRD
 \newcommand{\titredoc}{Rôles de Wnts et MuSK,\\un récepteur tyrosine kinase dans le cerveau }
+\newcommand{\teteCol}[1]{\multicolumn{1}{c}{#1}}
+
 \renewcommand{\thefigure}{\arabic{figure}} %Permet "Figure X" au lieu de "Figure Y.X" (Y étant num chapitre, X num figure)
 \renewcommand{\thetable}{\arabic{table}}
