@@ -72,12 +72,9 @@
 			%nogroupskip, %Pas de regroupement par première lettre
 			acronym,
 			]{glossaries}
-\usepackage{glossary-mcols}
-\newglossarystyle{twocollist}{\glossarystyle{index}\BeforeBeginEnvironment{theglossary}
-									{\begin{multicols*}{2}}\AfterEndEnvironment{theglossary}{\end{multicols*}}}
-									%multicols* permet de remplir une colonne après l'autre. multicol va faire en sorte de remplir les 2
-									 %colonnes du même volume	
-%\glssetcategoryattribute{acronym}{glossname}{\makefirstuc}
+\newglossarystyle{twocollist}{\glossarystyle{index}
+			\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}
+			\AfterEndEnvironment{theglossary}{\end{multicols*}}}
 
 %%% Biblio
 \usepackage[sorting=none,
