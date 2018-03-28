@@ -66,15 +66,26 @@
 \usepackage{cleveref} %Ref mieux gérer
 
 %%% Glossaire
-\usepackage[toc, %Apparaît dans table des matières
-			nopostdot, %Pas de points a fin acronyms
+%\usepackage{glossaries}
+\usepackage[
+			nogroupskip,
 			nonumberlist,%Pas de numéro de pages
-			%nogroupskip, %Pas de regroupement par première lettre
 			acronym,
 			]{glossaries}
-\newglossarystyle{twocollist}{\glossarystyle{index}
-			\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}
-			\AfterEndEnvironment{theglossary}{\end{multicols*}}}
+
+\newacronymstyle{twocollist}%
+{%
+	\GlsUseAcrEntryDispStyle{long-short}%
+}%
+{%
+	\GlsUseAcrStyleDefs{long-short}%
+	\renewcommand*{\GenericAcronymFields}{description={\capitalisewords{\the\glslongtok}}}%
+	\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}
+	\AfterEndEnvironment{theglossary}{\end{multicols*}}
+}
+
+\setacronymstyle{twocollist}
+\makeglossaries
 
 %%% Biblio
 \usepackage[sorting=none,
