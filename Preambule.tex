@@ -46,9 +46,16 @@
 	\renewcommand{\footrulewidth}{0pt}}
 \setlength{\headsep}{25pt}
 
+%%% Pasde chgt de page nouveau chapitres
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
 %%% Images
 \usepackage{graphicx} %Gestion des images
 \usepackage{wrapfig} %Gestion des images, permet mise image et texte cote a cote
+\usepackage{placeins}
 \captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Figure }} %Affichage Figure x. au lieu de fig x.
 \captionsetup[table]{labelfont={bf},labelformat={default},labelsep=colon,name={Table }}
 
@@ -71,22 +78,21 @@
 %%% Glossaire
 %\usepackage{glossaries}
 \usepackage[
+			toc,
 			nogroupskip,
 			nonumberlist,%Pas de numéro de pages
 			acronym,
 			]{glossaries}
-
 \newacronymstyle{twocollist}%
-{%
-	\GlsUseAcrEntryDispStyle{long-short}%
-}%
-{%
-	\GlsUseAcrStyleDefs{long-short}%
-	\renewcommand*{\GenericAcronymFields}{description={\capitalisewords{\the\glslongtok}}}%
-	\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}
-	\AfterEndEnvironment{theglossary}{\end{multicols*}}
-}
-
+	{%
+		\GlsUseAcrEntryDispStyle{long-short}%
+	}%
+	{%
+		\GlsUseAcrStyleDefs{long-short}%
+		\renewcommand*{\GenericAcronymFields}{description={\capitalisewords{\the\glslongtok}}}%
+		\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}
+		\AfterEndEnvironment{theglossary}{\end{multicols*}}
+	}
 \setacronymstyle{twocollist}
 \makeglossaries
 

@@ -21,6 +21,7 @@
 \blankpage
 
 %%%%% Remerciement %%%%%
+\chapter*{Remerciements}
 \input{./Remerciement.tex}\thispagestyle{fancy}
 \newpage
 
@@ -30,7 +31,6 @@
 \clearpage
 
 %%%%% Inclusion Glossaire %%%%%
-
 \pagenumbering{Roman}
 \printglossary[	title=Abbréviations, 
 	toctitle=Abbréviations, 
@@ -43,13 +43,23 @@
 \pagenumbering{arabic}
 \cfoot{\textbf{\thepage}}
 
+\chapter{Introduction}
 \input{./Introduction.tex}
+
+\chapter{Matériels et Méthodes}
 \input{./MatEtMeth.tex}
+
+%\chapter{Résultats}
 %\input{./Resultats.tex}
+
+%\chapter{Discussion}
 %\input{./Discussion.tex}
+
+%\chapter{Conclusion}
 %\input{./Conclusion.tex}
 
 %%%%% Inclusion Bibliographie %%%%%
+\clearpage
 \printbibliography[heading=bibintoc, title=Références]
 
 \end{document}
