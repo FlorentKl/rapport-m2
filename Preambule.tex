@@ -82,6 +82,7 @@
 			nogroupskip,
 			nonumberlist,%Pas de numéro de pages
 			acronym,
+			nopostdot,
 			]{glossaries}
 \newacronymstyle{twocollist}%
 	{%
@@ -93,6 +94,7 @@
 		\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}
 		\AfterEndEnvironment{theglossary}{\end{multicols*}}
 	}
+\renewcommand{\glossarypreamble}{\small}
 \setacronymstyle{twocollist}
 \makeglossaries
 
