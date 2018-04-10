@@ -56,8 +56,16 @@
 \usepackage{graphicx} %Gestion des images
 \usepackage{wrapfig} %Gestion des images, permet mise image et texte cote a cote
 \usepackage{placeins}
-\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Figure }} %Affichage Figure x. au lieu de fig x.
-\captionsetup[table]{labelfont={bf},labelformat={default},labelsep=colon,name={Table }}
+\usepackage{subcaption}
+	%%%Figure
+\captionsetup[figure]{labelfont={bf}, labelformat={default}, labelsep=period, name={Figure }} %Affichage Figure x. au lieu de fig x. dans figure
+\captionsetup[table]{labelfont={bf}, labelformat={default}, labelsep=colon, name={Table }} %idem pour table
+	%%%Sous Figure
+\captionsetup[subfigure]{labelformat=simple}
+\renewcommand{\thesubfigure}{\Alph{subfigure}}
+\DeclareCaptionLabelFormat{bold}{\textbf{(#2)}}
+\captionsetup{subrefformat=bold}
+
 
 \renewcommand{\thefigure}{\arabic{figure}} %Permet "Figure X" au lieu de "Figure Y.X" (Y étant num chapitre, X num figure)
 \renewcommand{\thetable}{\arabic{table}}
