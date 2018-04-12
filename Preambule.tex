@@ -81,6 +81,7 @@
 	urlcolor=gray,}
 \usepackage{fancyref} %Après Hyperef
 \usepackage{cleveref} %Ref mieux gérer
+\newcommand{\crefpairconjunction}{ et } %"figs x et y" au lieu de "figs x and y"
 
 %%% Glossaire
 %\usepackage{glossaries}
@@ -128,8 +129,10 @@
 %Depend du package Titlesec
 %\titleformat{command}[shape]{format}{abel}{sep}{before-code}[after-code]
 \makeatletter
-\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\chaptertitlename~\thechapter : }{17\p@}{\huge}
+\titleformat{\chapter}[hang]{\normalfont\LARGE\bfseries}{\chaptertitlename~\thechapter : }{17\p@}{\LARGE}
 \titlespacing*{\chapter}{0pt}{10\p@}{13\p@}
+\titleformat*{\section}	{\normalfont\Large\bfseries}
+\titlespacing*{\section}{0pt}{3\p@}{5\p@}
 \titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{}{0\p@}{}[.]
 \makeatother
 
