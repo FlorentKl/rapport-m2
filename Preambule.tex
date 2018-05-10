@@ -54,7 +54,7 @@
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
 \makeatother
 
-%%% Images
+%%% Images & figures
 \usepackage{graphicx} %Gestion des images
 \usepackage{wrapfig} %Gestion des images, permet mise image et texte cote a cote
 \usepackage{placeins}
@@ -66,10 +66,11 @@
 \renewcommand{\thesubfigure}{\Alph{subfigure}}
 \DeclareCaptionLabelFormat{bold}{\textbf{(#2)}}
 \captionsetup{subrefformat=bold}
-
-
 \renewcommand{\thefigure}{\arabic{figure}} %Permet "Figure X" au lieu de "Figure Y.X" (Y étant num chapitre, X num figure)
 \renewcommand{\thetable}{\arabic{table}}
+
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter} %Compteur continu entre chapitre
 
 %%% Pdf / Références internes
 \usepackage{hyperref} %Meilleure gestion pdf, load avant glossaries pour crossref
@@ -130,8 +131,9 @@
 %Redef format section (chapite, chapitre* et paragraph), notamment reduire espace au dessus et dessous de ceux ci
 %Depend du package Titlesec
 %\titleformat{command}[shape]{format}{abel}{sep}{before-code}[after-code]
+%\titleformat{\chapter}[hang]{\normalfont\LARGE\bfseries}{\chaptertitlename~\thechapter : }{17\p@}{\LARGE}
 \makeatletter
-\titleformat{\chapter}[hang]{\normalfont\LARGE\bfseries}{\chaptertitlename~\thechapter : }{17\p@}{\LARGE}
+\titleformat{\chapter}[hang]{\normalfont\LARGE\bfseries}{\thechapter) }{5\p@}{\LARGE}
 \titlespacing*{\chapter}{0pt}{10\p@}{13\p@}
 \titleformat*{\section}	{\normalfont\Large\bfseries}
 \titlespacing*{\section}{0pt}{3\p@}{5\p@}
