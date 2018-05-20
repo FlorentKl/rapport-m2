@@ -1,12 +1,14 @@
 \section{Comportement}
 \label{sec:Comportement}
-	Concernant les blessures préalablement observées lors du stage de B. SOMON, aucune n'a pu être à nouveau visualisée durant mon stage. Les animaux ont cependant été qualifiés de "plus sensible à leurs environnement que la normale" par les animaliers en charges de ceux-ci. On peut donc penser que durant le stage précédent, comme l'animalerie n'était pas la même, les animaux étaient soumis à un stress plus importants, et adoptaient en réponse à ce stress un comportement d'automutilation.
+	Concernant les blessures préalablement observées sur les souris \mcrd mâles lors du stage de B. SOMON, elles n'ont pas pu être reproduites durant mon stage. Les animaux (mutants comme hétérozygotes) ont cependant été qualifiés de "plus sensible à leurs environnement que la normale" et de "un peu bizarre" par les animaliers en charges de ceux-ci. Comme durant le stage de B. SOMON, les animaux n'étaient pas situés dans la même animalerie qu'actuellement (zone sanctuaire de l'ICM et zone EOPS de l'animalerie de Paris Descartes), on peut penser que les souris étaient soumises à un stress environementale plus important, et adoptaient en réponse à ce stress un comportement d'automutilation, potentiellement accentué chez le mâle.
 
 \section{Structure du cerveau}
 \label{sec:NisslResultat}
 	La coloration de Nissl, ici à base de Crésyl violet, est un marquage classique du tissu nerveux avec une molécule basique, qui marque particulièrement l'acide nucléique (\acrshort{adn} et \acrshort{arn}) des cellules car basophile (ces structures au microscope prennent le nom de "Corps de Nissl'). Ce marquage est important sur les neurones, riches en \gls{re} rugueux, et donc avec une grande quantité d'\acrshort{arn}. Cette coloration permet ainsi de mettre en évidence les motifs des différentes structures cellulaires au sein du tissu nerveux.
 
-	Afin de visualiser si la mutation \mcrd altérait l'organisation structurale du cerveau, une coloration de Nissl a été réalisée sur 4 individus : 2 souris mutantes et 2 souris sauvages (1 mâle et 1 femelle pour chaque groupe) (\cref{fig:NisslResultat}). Ce marquage a permis de mettre en évidence que la mutation de \gls{musk} ne modifiait pas de manière visible l'organisation du cerveau, à la fois chez les souris femelles (\cref{fig:FemWTNissl,fig:FemMutNissl}) et mâles (\cref{fig:MaleWTNissl,fig:MaleMutNissl}). 
+	Comme les protéines \gls{wnt} sont généralement impliquées dans le développement et l'organisation du cerveau, l'ont peut se demander si la suppression du domaine de liaisons de ces protéines sur le récepteur \gls{musk} allait entraîner des modifications importantes du développement du système nerveux.
+
+	Afin de visualiser si cette mutation \mcrd altérait l'organisation structurale du cerveau, une coloration de Nissl a donc été réalisée sur 4 individus : 2 souris mutantes et 2 souris sauvages (1 mâle et 1 femelle pour chaque groupe) (\cref{fig:NisslResultat}). Ce marquage a permis de mettre en évidence que la mutation de \gls{musk} ne modifiait pas de manière visible l'organisation du cerveau, à la fois chez les souris femelles (\cref{fig:FemWTNissl,fig:FemMutNissl}) et mâles (\cref{fig:MaleWTNissl,fig:MaleMutNissl}). 
 
 	\begin{figure}[h] %Figure Nissl Résultats
 		\begin{center}
@@ -42,7 +44,9 @@
 
 	\subsection{\acrshort{neun}}
 	\label{ssec:neun}
-	\Acrshort{neun} est un marqueur du  corps cellulaire et des noyaux de presque tout les neurones, couramment utilisé \cite{Guselnikova2015}. Ce marquage à été utilisé afin de vérifier la distribution et le nombre des neurones au niveau de l'hippocampe des souris \mcrd était perturbée ou non.
+	\Acrshort{neun} est un marqueur du  corps cellulaire et des noyaux de presque tout les neurones, couramment utilisé \cite{Guselnikova2015}. Ce marquage à été utilisé afin de vérifier la distribution et le nombre des neurones au niveau de l'hippocampe des souris \mcrd était perturbée ou non. Pour cela, des mesures de l'épaisseur de la couche pyramidale de les hippocampes Droit et Gauche ont été mesurés dans trois régions différentes (CA1, CA3 et Gyrus Denté) sur trois coupes par individus.
+	
+	
 	
 	\subsection{\acrshort{musk} et \acrshort{gfap}}
 	\label{ssec:musk}
@@ -67,30 +71,53 @@
 	
 	Suite au co-marquage de \gls{musk} et \gls{gfap}, on peut observer une colocalisation des deux marqueurs, ce qui semblerait indiqué que \gls{musk} est exprimé par les astrocytes.
 	
+	%Images Coloc. MuSK GFAP
 	\begin{figure}[h]
 		\begin{center}
-			\missingfigure{musk gfap}
+			\begin{subfigure}[h]{0.49\textwidth}
+				\caption{}
+				\label{fig:ColocMuSK}
+				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/MuSK-GFAP/M439_Mut_MuSK.jpg}
+			\end{subfigure}
+			\begin{subfigure}[h]{0.49\textwidth}
+				\caption{}
+				\label{fig:ColocGFAP}
+				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/MuSK-GFAP/M439_Mut_GFAP.jpg}
+			\end{subfigure}
+			\begin{subfigure}[h]{0.49\textwidth}
+				\caption{}
+				\label{fig:ColocMuSK&GFAP}
+				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/MuSK-GFAP/M439_Mut_MuSK_GFAP.jpg}
+			\end{subfigure}
 		\end{center}
+		\caption{Le marquage de \gls{musk} et \gls{gfap} colocalise.}
+		\descfig{Marquage de \gls{musk} (vert) et de \gls{gfap} (rouge) et \acrshort{dapi} (bleu) au niveau de la région CA1 de l'hippocampe. Le marquage de \gls{musk} va colocaliser avec \gls{gfap} dans toutes les régions du cerveau observées.
+				\subref{fig:ColocMuSK} : Marquage de \gls{musk}.
+				\subref{fig:ColocGFAP} : Marquage de \gls{gfap}.
+				\subref{fig:ColocMuSK&GFAP} : Superposition de \subref{fig:ColocMuSK} et \subref{fig:ColocGFAP}.
+				Barre d'échelle : 50µm.}
+		\label{fig:colocalisation}
 	\end{figure}
 	
 	Cependant, le marquage observé de \gls{musk} ne ressemble pas à ce que l'on peut observer au niveau de la \gls{jnm}.  On peut donc émettre un doute sur la spécificité du marquage. Comme il n'existe pas vraiment d'autres anticorps dirigés contre \gls{musk} utilisables en \gls{ihc}, j'ai dû essayé d'autres moyen afin de tenter de confirmer la spécificité du marquage. Tout d'abord, un co-marquage \gls{musk}/\acrshort{gfap} à été réalisé sur des sections de cerveau d'embryon de souris \gls{musk} KO (stade E18.5), la mutation étant létale après la naissance pour cause de défaillance respiratoire (\cref{fig:MuskEmbryon}). Sur seulement une coupe d'embryon WT sur cinq, un léger marquage ressemblant à celui observer chez les adultes est présent (\cref{fig:MuskE5WT,fig:MuskE5Marquage}), et aucun marquage n'est présent chez les animaux KO (\cref{fig:MuskE1KO}). Cela ne suffit pas à confirmer la spécificité du marquage de \gls{musk}. Pour tenter alors de confirmer la présence de \gls{musk} dans le cerveau, une immunoprécipitation est alors envisagée.
 	
+	%Images Embryon
 	\begin{figure}[h]
 		\begin{center}
 			\begin{subfigure}[h]{0.329\textwidth}
 				\caption{}
 				\label{fig:MuskE5WT}
-				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/E5WT_50um_500px_df.jpg} %Gel anti light chain
+				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/Embryon/E5WT_50um_500px_df.jpg} 
 			\end{subfigure}
 			\begin{subfigure}[h]{0.329\textwidth}
 				\caption{}
 				\label{fig:MuskE5Marquage}
-				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/E5_WT_MuSK_500px_Zoom_10um.jpg}
+				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/Embryon/E5_WT_MuSK_500px_Zoom_10um.jpg}
 			\end{subfigure}
 			\begin{subfigure}[h]{0.329\textwidth}
 				\caption{}
 				\label{fig:MuskE1KO}
-				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/E1KO_50um_500px_df.jpg}
+				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/Embryon/E1KO_50um_500px_df.jpg}
 			\end{subfigure}
 		\end{center}
 		\caption{Pas de marquage de \gls{musk} sur embryon E18.5 WT et KO.}
