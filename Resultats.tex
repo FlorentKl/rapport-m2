@@ -34,7 +34,12 @@
 			\end{subfigure}
 		\end{center}
 		\caption{Pas de modifications structurelles observées chez les mutants.}
-		\descfig{Coloration de Nissl sur : \subref{fig:FemWTNissl} Femelle sauvage, \subref{fig:FemMutNissl} Femelle mutante, \subref{fig:MaleWTNissl} Mâle sauvage, \subref{fig:MaleMutNissl} Mâle mutant. Images représentatives de coupes réalisées au niveau de l'hippocampe. Âge moyen des souris : 30 jours. Barre d'échelle : 2 mm.}
+		\descfig{
+			Coloration de Nissl sur : \subref{fig:FemWTNissl} Femelle sauvage, \subref{fig:FemMutNissl} Femelle mutante, \subref{fig:MaleWTNissl} Mâle sauvage, \subref{fig:MaleMutNissl} Mâle mutant. 
+			Images représentatives de coupes réalisées au niveau de l'hippocampe. 
+			Âge moyen des souris : 30 jours. 
+			Barre d'échelle : 2 mm.
+				}
 		\label{fig:NisslResultat}
 	\end{figure}
 	%\FloatBarrier
@@ -59,8 +64,9 @@
 			\includegraphics[width=\textwidth]{./Images/Immuno/Musk/loca_MuSK.jpg}
 		\end{center}
 		\caption{Localisation du marquage de \gls{musk} dans le cerveau.}
-		\descfig{Immunomarquage de \gls{musk} sur : Tranche de cerveau entière.%
-				 alv : alveux hippocampus, cc : corps calleux, cp : pédoncule cérébral, ec : capsule externe, fr : fasciculus retroflexus, hp : hippocampe, or : stratum oriens de l'hippocampe. Barre d'échelle : 2 mm. %
+		\descfig{%
+			Immunomarquage de \gls{musk} sur : Tranche de cerveau entière.%
+			 alv : alveux hippocampus, cc : corps calleux, cp : pédoncule cérébral, ec : capsule externe, fr : fasciculus retroflexus, hp : hippocampe, or : stratum oriens de l'hippocampe. Barre d'échelle : 2 mm.
 			 	}
 		\label{fig:ImmunoMusk}
 	\end{figure}
@@ -69,7 +75,7 @@
 	
 	Pour réaliser le marquage de \gls{gfap}, deux anticorps différents ont été utilisés. Le premier, fourni d'abord par l'équipe de C. AGULHON, provient de chez Millipore-Merck (\cref{table:Ac}, réf. MAB360) et fonctionne correctement. Le second anticorps, provenant de chez Abcam (\cref{table:Ac}, réf. ab4648) et commandé suite à une indisponibilité du premier anticorps, s'est révélé inefficace à différentes concentrations testées ($1{:}100$, $1{:}50$). Le premier anticorps a pu heureusement être à nouveau commandé pour la suite des expériences.
 	
-	Suite au co-marquage de \gls{musk} et \gls{gfap}, on peut observer une colocalisation des deux marqueurs, ce qui semblerait indiqué que \gls{musk} est exprimé par les astrocytes.
+	Suite au co-marquage de \gls{musk} et \gls{gfap}, on peut observer une colocalisation des deux marqueurs, ce qui semblerait indiqué que \gls{musk} est exprimé par les astrocytes \cref{fig:ColocMuSK,fig:ColocGFAP,fig:ColocMuSK&GFAP}. \todo{modif figs x to y en preambule}
 	
 	%Images Coloc. MuSK GFAP
 	\begin{figure}[h]
@@ -89,13 +95,21 @@
 				\label{fig:ColocMuSK&GFAP}
 				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/MuSK-GFAP/M439_Mut_MuSK_GFAP.jpg}
 			\end{subfigure}
+			\begin{subfigure}[h]{0.49\textwidth}
+				\caption{}
+				\label{fig:ColocZoom}
+				\includegraphics[width=\textwidth]{./Images/Immuno/Musk/MuSK-GFAP/zoom10um.jpg}
+			\end{subfigure}
 		\end{center}
 		\caption{Le marquage de \gls{musk} et \gls{gfap} colocalise.}
-		\descfig{Marquage de \gls{musk} (vert) et de \gls{gfap} (rouge) et \acrshort{dapi} (bleu) au niveau de la région CA1 de l'hippocampe. Le marquage de \gls{musk} va colocaliser avec \gls{gfap} dans toutes les régions du cerveau observées.
-				\subref{fig:ColocMuSK} : Marquage de \gls{musk}.
-				\subref{fig:ColocGFAP} : Marquage de \gls{gfap}.
-				\subref{fig:ColocMuSK&GFAP} : Superposition de \subref{fig:ColocMuSK} et \subref{fig:ColocGFAP}.
-				Barre d'échelle : 50µm.}
+		\descfig{%
+			Marquage de \gls{musk} (vert) et de \gls{gfap} (rouge) et \acrshort{dapi} (bleu) au niveau de la région CA1 de l'hippocampe. Le marquage de \gls{musk} va colocaliser avec \gls{gfap} dans toutes les régions du cerveau observées.
+			\subref{fig:ColocMuSK} : Marquage de \gls{musk}.
+			\subref{fig:ColocGFAP} : Marquage de \gls{gfap}.
+			\subref{fig:ColocMuSK&GFAP} : Superposition de \subref{fig:ColocMuSK} et \subref{fig:ColocGFAP}.
+			\subref{fig:ColocZoom} : Zoom de la partie encadré de \subref{fig:ColocMuSK&GFAP}. On peut observer que le prolongement marqué à la fois par \gls{musk} et \gls{gfap} va se mettre en place autour du noyau (flèche blanche).
+			Barre d'échelle : 20µm \subref{fig:ColocMuSK}, \subref{fig:ColocGFAP}, \subref{fig:ColocMuSK&GFAP} ; 10µm \subref{fig:ColocZoom}.
+				}	
 		\label{fig:colocalisation}
 	\end{figure}
 	
@@ -121,11 +135,12 @@
 			\end{subfigure}
 		\end{center}
 		\caption{Pas de marquage de \gls{musk} sur embryon E18.5 WT et KO.}
-		\descfig{Marquage de \gls{musk} et \gls{gfap} sur des embryons (stade E18.5) de souris \gls{musk} KO (n = 2) et WT (n = 1). %
-				\subref{fig:MuskE5WT} : Embryon WT. Sur une coupe, un marquage ressemblant à celui de \gls{musk} observé chez les adultes était présent (flèches blanches). %
-				\subref{fig:MuskE5Marquage} : Agrandissement du marquage de \gls{musk} encadré en \subref{fig:MuskE5WT}. %
-				\subref{fig:MuskE1KO} : Embryon KO. Le marquage observé (triangles blanc) n'est pas spécifique. %
-				Images représentatives issues de la région du fornix dorsal. Barre d'échelle : 50µm \subref{fig:MuskE5WT} et  \subref{fig:MuskE1KO}, 10µm \subref{fig:MuskE5Marquage}. 
+		\descfig{%
+			Marquage de \gls{musk} et \gls{gfap} sur des embryons (stade E18.5) de souris \gls{musk} KO (n = 2) et WT (n = 1). %
+			\subref{fig:MuskE5WT} : Embryon WT. Sur une coupe, un marquage ressemblant à celui de \gls{musk} observé chez les adultes était présent (flèches blanches). %
+			\subref{fig:MuskE5Marquage} : Agrandissement du marquage de \gls{musk} encadré en \subref{fig:MuskE5WT}. %
+			\subref{fig:MuskE1KO} : Embryon KO. Le marquage observé (triangles blanc) n'est pas spécifique. %
+			Images représentatives issues de la région du fornix dorsal. Barre d'échelle : 50µm \subref{fig:MuskE5WT} et  \subref{fig:MuskE1KO}, 10µm \subref{fig:MuskE5Marquage}. 
 				}
 		\label{fig:MuskEmbryon}
 	\end{figure}
@@ -170,7 +185,7 @@
 			\subref{fig:WBbon} : \gls{ip} suivie de \gls{wb} sur 3 souris C57BL/6. Des bandes sont révélés aux alentours de 110kDa pour les régions de l'hippocampe et du cervelet (flèches noires). Une bande de faible intensité semble être présente pour le cortex (tête de flèche noire). Témoin positif : 15µL d'extrait cellulaire de cellules HEK293 transfectées, bande à 130kDa (flèche blanche). Exposition : 3 minutes. %
 			\subref{fig:WB1erechec} : \gls{ip} suivie de \gls{wb} sur 3 souris \mcrd (Mut) et 3 souris sauvages (WT) issues de la même souche. Exposition : 3 minutes.
 			\subref{fig:WBpasbon} : \gls{ip} suivie de \gls{wb} sur 3 souris \mcrd (Mut) et 3 souris sauvages (WT) issues de la même souche. Aucune bande n'est révélée, avec ou sans anticorps durant \gls{ip}. Rien n'est révélé non plus chez le témoin positif : Extrait de cervelet et cortex issus de la première expérience. Hipp : Hippocampe, Ct : Cervelet, Cx : Cortex, + : Témoin positif, Ac- : Sans anticorps lors de l'\gls{ip}, Mut : Mutant, \acrshort{wt} : Sauvage. Poids moléculaire de \gls{musk} attendu : 110kDa. Exposition : 3 minutes. %
-			}
+				}
 		\label{fig:WBResultat}
 	\end{figure}
 
