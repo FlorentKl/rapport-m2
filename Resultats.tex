@@ -230,29 +230,53 @@
 \label{sec:ExpressionMuSK}
 	Afin de tester l'impact potentiel de la delétion du \gls{crd} sur l'expression de la protéine, j'ai réalisé une \gls{qpcr} sur trois structures différentes : le cervelet, l'hippocampe gauche et droit. En effet, des résultats très préliminaire dans le laboratoire chez des 2 souris de souche C57Bl/6 (1 mâle et 1 femelle) avaient montrés une légère différence d'expression selon l'hémisphère du cerveau étudié. De plus, on retrouvait également une différence entre des individus de sexe opposé.Mon objectif a donc été de confirmer les différences d'expressions liées au genre et à l'hémisphère chez les souris \gls{wt} et de tester ces mêmes paramètres chez les souris \mcrd.
 	
+	Par manque d'individus au moment de l'expérience, je n'ai pas pu tester les conditions mâles \emph{versus} femelles. On peut voir que l'expression 
+	
 	\begin{figure}[h]
 		\begin{center}
-			\begin{subfigure}[h]{0.98\textwidth}
-				\caption{}
-				\label{fig:TableAmpli}
-				\begin{tabular}{c | c c}
-					\hline
-						&WT									&Mut\\
-					\hline
-					HG 	&\num{2.60e-02 }(\num{7.88e-03})	&\num{1.94e-05} (\num{6.45e-06}) \\
-					HD 	&\num{8.93e-03} (\num{2.45e-03})	&\num{1.83e-05} (\num{4.67e-06}) \\
-					Ct	&\num{3.53e-03} (\num{1.20e-03})	&\num{2.45e-05} (\num{5.61e-06}) \\				
-				\end{tabular}
+			\begin{subfigure}[h]{0.49\textwidth}
+				\footnotesize{
+					\caption{Expression \textDelta{}Cp chez des individus \gls{wt} et mutants. Moyenne (écart-type).}
+					\label{fig:TableAmpli}
+					\begin{tabular}{c | c c}
+						\hline
+							&WT						&Mut\\
+						\hline
+						HG 	&2.60e-02 (7.88e-03)	&1.94e-05 (6.45e-06) \\
+						HD 	&8.93e-03 (2.45e-03)	&1.83e-05 (4.67e-06) \\
+						Ct	&3.53e-03 (1.20e-03)	&2.45e-05 (5.61e-06) \\				
+					\end{tabular}
+				}
 			\end{subfigure}
 			\begin{subfigure}[h]{0.49\textwidth}
 				\caption{}
 				\label{fig:AmpliqPCR}
 				\includegraphics[width=\textwidth]{./Images/qPCR/Amplification.jpg}
 			\end{subfigure}
+			\begin{subfigure}[h]{0.329\textwidth}
+				\caption{}
+				\label{fig:qPCRCompaWTMut}
+				\includegraphics[width=\textwidth]{./Images/qPCR/Comp_WT-Mut.jpg}
+			\end{subfigure}
+			\begin{subfigure}[h]{0.329\textwidth}
+				\caption{}
+				\label{fig:qPCRCompaWT}
+				\includegraphics[width=\textwidth]{./Images/qPCR/Comp_Struct_WT.jpg}
+			\end{subfigure}
+			\begin{subfigure}[h]{0.329\textwidth}
+				\caption{}
+				\label{fig:qPCRCompaMut}
+				\includegraphics[width=\textwidth]{./Images/qPCR/Comp_Struct_Mut.jpg}
+			\end{subfigure}
 		\end{center}
 		\caption{L'expression de \gls{musk} est fortement diminué chez les mutants.}
 		\descfig{%
-				\subref{fig:TableAmpli} : 
+				\subref{fig:TableAmpli} : Comparaison de l'expression \textDelta{}Cp obtenus après normalisation entre des individus \gls{wt} et mutants dans trois structures. Les résultats sont présentés sous la forme moyenne (écart-type).
+				\subref{fig:AmpliqPCR} : Courbe d'amplification. On peut voir que l'expression du gène de ménage \acrshort{26s} (vers la droite de la courbe) est semblable entre les individus \gls{wt} et \mcrd. Cependant, l'expression de \gls{musk} est grandement diminuée chez les individus mutants (courbes rouges) par rapport aux individus sauvages (courbes vertes).
+				\subref{fig:qPCRCompaWTMut} : Comparaison de l'expression des différentes structures entre individus sauvages et mutants.
+				\subref{fig:qPCRCompaWT} : Comparaison de l'expression de \gls{musk} dans différentes structures chez les individus sauvages.
+				\subref{fig:qPCRCompaMut} : Comparaison de l'expression de \gls{musk} dans différentes structures chez les individus mutants.
+				HG : Hippocampe Gauche, HD : Hippocampe Droit, Ct : Cervelet. n = 3 (\gls{wt}) et n = 4 (mutants). Test statistique : Test t de Student non apparié (\subref{fig:qPCRCompaWTMut}), et Test t de Student apparié (\subref{fig:qPCRCompaWT} \& \subref{fig:qPCRCompaMut}). * : p<0.05, ** : p<0.01, *** : p<0.001. 
 				}
 		\label{fig:ExpressionMuSK}
 	\end{figure}
