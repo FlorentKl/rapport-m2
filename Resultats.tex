@@ -229,3 +229,30 @@
 \section{Expression de \gls{musk}}
 \label{sec:ExpressionMuSK}
 	Il est intéressant de connaître le niveau d'expression de la protéine \gls{musk} dans le cerveau, afin de voir si la mutation allait impactée l'expression de la protéine. Pour cela, j'ai eu recours à la technique de \gls{qpcr} sur trois structures différentes : le cervelet, et l'hippocampe gauche ou droit. En effet, des résultats très préliminaire dans le laboratoire chez des 2 souris de souche C57Bl/6 (1 mâle et 1 femelle) avait montrée une légère différence d'expression selon le coté du cerveau étudié. De plus, on retrouvait également une différence entre des individus de sexe opposé. Il était donc nécessaire de reprendre cette technique chez un plus grand nombre d'animaux afin de confirmer ou non ces tendances.
+	
+	\begin{figure}[h]
+		\begin{center}
+			\begin{subfigure}[h]{0.98\textwidth}
+				\caption{}
+				\label{fig:TableAmpli}
+				\begin{tabular}{c | c c}
+					\hline
+						&WT									&Mut\\
+					\hline
+					HG 	&\num{2.60e-02 }(\num{7.88e-03})	&\num{1.94e-05} (\num{6.45e-06}) \\
+					HD 	&\num{8.93e-03} (\num{2.45e-03})	&\num{1.83e-05} (\num{4.67e-06}) \\
+					Ct	&\num{3.53e-03} (\num{1.20e-03})	&\num{2.45e-05} (\num{5.61e-06}) \\				
+				\end{tabular}
+			\end{subfigure}
+			\begin{subfigure}[h]{0.49\textwidth}
+				\caption{}
+				\label{fig:AmpliqPCR}
+				\includegraphics[width=\textwidth]{./Images/qPCR/Amplification.jpg}
+			\end{subfigure}
+		\end{center}
+		\caption{L'expression de \gls{musk} est fortement diminué chez les mutants.}
+		\descfig{%
+				\subref{fig:TableAmpli} : 
+				}
+		\label{fig:ExpressionMuSK}
+	\end{figure}
