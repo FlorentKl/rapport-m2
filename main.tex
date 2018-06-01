@@ -31,11 +31,6 @@
 \newpage
 \clearpage
 
-%Résumé 10 lignes
-\chapter*{Résumé}
-\addcontentsline{toc}{chapter}{Résumé}
-\input{./resume.tex}
-
 %%%%% Inclusion Glossaire %%%%%
 \setcounter{page}{1}
 \pagenumbering{arabic}
@@ -72,5 +67,12 @@
 \let\clearpage\relax
 \printbibliography[heading=bibintoc, title=Références]
 \endgroup
+\clearpage
+
+%Résumé 10 lignes
+\cfoot{ }
+\chapter*{Résumé}\thispagestyle{fancy}
+\addcontentsline{toc}{chapter}{Résumé}
+\input{./resume.tex}
 
 \end{document}

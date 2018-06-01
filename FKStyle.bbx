@@ -80,12 +80,12 @@
 \newbibmacro*{bbx:savehash}{\savefield{fullhash}{\bbx@lasthash}}
 
 % PMID
-\DeclareFieldFormat{pmcid}{%
-  PMCID\addcolon\space
-  \ifhyperref
-    {\href{http://www.ncbi.nlm.nih.gov/pmc/articles/#1}{\nolinkurl{#1}}}
-    {\nolinkurl{#1}}}
-\DeclareFieldAlias{pmid}{eprint:pubmed}
+%\DeclareFieldFormat{pmcid}{%
+ % PMCID\addcolon\space
+ % \ifhyperref
+ %   {\href{http://www.ncbi.nlm.nih.gov/pmc/articles/#1}{\nolinkurl{#1}}}
+%    {\nolinkurl{#1}}}
+%\DeclareFieldAlias{pmid}{eprint:pubmed}
 
 \renewbibmacro*{eprint}{%
   \newunit\newblock
@@ -95,10 +95,10 @@
     {\printfield{eprint}}
     {\printfield[eprint:\strfield{eprinttype}]{eprint}}}
 
-\newbibmacro*{pmid}{%
-  \setunit{\adddot\addspace}%
-   {\printfield{pmid}}
-}
+%\newbibmacro*{pmid}{%
+%  \setunit{\adddot\addspace}%
+%   {\printfield{pmid}}
+%}
 
 
 % Bibliography macros
@@ -492,7 +492,7 @@
    % {}%
   \newunit\newblock
   %\usebibmacro{doi+eprint+url}%
-  \usebibmacro{pmid}%
+  %\usebibmacro{pmid}%
   %\newunit\newblock
  % \usebibmacro{addendum+pubstate}%
   \setunit{\bibpagerefpunct}
@@ -538,7 +538,7 @@
     {}%
   \newunit\newblock
   %\usebibmacro{doi+eprint+url}%
-  \usebibmacro{pmid}%
+ % \usebibmacro{pmid}%
   \newunit\newblock
   \usebibmacro{addendum+pubstate}%
   \setunit{\bibpagerefpunct}\newblock
@@ -585,7 +585,7 @@
     {}%
   \newunit\newblock
   %\usebibmacro{doi+eprint+url}%
-  \usebibmacro{pmid}%
+% \usebibmacro{pmid}%
   \newunit\newblock
   \usebibmacro{addendum+pubstate}%
   \setunit{\bibpagerefpunct}\newblock
@@ -633,7 +633,7 @@
     {}%
   \newunit\newblock
   %\usebibmacro{doi+eprint+url}%
-  \usebibmacro{pmid}%
+  %\usebibmacro{pmid}%
   \newunit\newblock
   \usebibmacro{addendum+pubstate}%
   \setunit{\bibpagerefpunct}\newblock
@@ -680,7 +680,7 @@
     {}%
   \newunit\newblock
   %\usebibmacro{doi+eprint+url}%
-  \usebibmacro{pmid}%
+  %\usebibmacro{pmid}%
   \newunit\newblock
   \usebibmacro{addendum+pubstate}%
   \setunit{\bibpagerefpunct}\newblock
@@ -745,7 +745,7 @@
   \usebibmacro{date}%
   \newunit\newblock
   %\usebibmacro{doi+eprint+url}%
-  \usebibmacro{pmid}%
+  %\usebibmacro{pmid}%
   \newunit\newblock
   \usebibmacro{addendum+pubstate}%
   \setunit{\bibpagerefpunct}\newblock
@@ -787,7 +787,7 @@
     {}%
   \newunit\newblock
   %\usebibmacro{doi+eprint+url}%
-  \usebibmacro{pmid}%
+  %\usebibmacro{pmid}%
   \newunit\newblock
   \usebibmacro{addendum+pubstate}%
   \setunit{\bibpagerefpunct}\newblock
